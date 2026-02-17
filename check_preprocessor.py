@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""检查C++文件中的预处理指令是否配对"""
+# // coding: utf-8 
+# 检查C++文件中的预处理指令是否配对
 
 import os
 import re
 from pathlib import Path
 
 def check_file(filepath):
-    """检查单个文件的预处理指令"""
+    # 检查单个文件的预处理指令
     with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
         lines = f.readlines()
     
@@ -76,3 +76,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
